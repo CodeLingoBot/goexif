@@ -90,7 +90,7 @@ func (te tiffErrors) Error() string {
 	return strings.Join(allErrors, "\n")
 }
 
-// IsCriticalError, given the error returned by Decode, reports whether the
+// IsCriticalError IsCriticalError, given the error returned by Decode, reports whether the
 // returned *Exif may contain usable information.
 func IsCriticalError(err error) bool {
 	_, ok := err.(tiffErrors)
